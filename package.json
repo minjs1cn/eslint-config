@@ -13,6 +13,10 @@
   "scripts": {
     "test": "eslint --ext .ts,.jsx,.tsx fixture"
   },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "peerDependencies": {
     "eslint": ">=8.12.0",
     "typescript": "^4.6.3"
