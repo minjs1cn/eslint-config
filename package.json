@@ -1,10 +1,10 @@
 {
   "name": "eslint-config-jammy",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/minjs1nc/eslint-config-jammy"
+    "url": "https://github.com/minjs1n/eslint-config-jammy"
   },
   "main": "src/index.js",
   "files": [
