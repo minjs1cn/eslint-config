@@ -12,3 +12,4 @@ foo(1);
 function a() {
   console.log(add(1, 2));
 }
+a();
