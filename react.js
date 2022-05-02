@@ -1,8 +1,11 @@
 module.exports = {
   extends: [
-    "alloy",
-    "alloy/react",
-    "alloy/typescript",
-    "plugin:prettier/recommended",
+    './typescript',
+    'plugin:react/recommended',
   ],
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };

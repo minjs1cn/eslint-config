@@ -1,3 +1,9 @@
+import { defineProps } from 'vue';
+
+const props = defineProps();
+
+console.log(props);
+
 /**
  * 1
  * @param {*} a

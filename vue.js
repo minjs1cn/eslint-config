@@ -1,8 +1,15 @@
 module.exports = {
   extends: [
-    "alloy",
-    "alloy/vue",
-    "alloy/typescript",
-    "plugin:prettier/recommended",
+    './typescript',
+    'plugin:vue/vue3-recommended',
+  ],
+  overrides: [
+    {
+      files: [ '*.vue' ],
+      parser: 'vue-eslint-parser',
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+      },
+    },
   ],
 };

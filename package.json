@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-jammy",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -16,35 +16,29 @@
   ],
   "scripts": {
     "lint": "npm run basic && npm run react && npm run typescript && npm run vue",
-    "basic": "eslint fixture/basic/* --config basic.js",
-    "react": "eslint fixture/react/* --config react.js",
-    "vue": "eslint fixture/vue/* --config vue.js",
-    "typescript": "eslint fixture/typescript/* --config typescript.js"
+    "basic": "eslint fixture/basic/* --config fixture/basic/.eslintrc.js",
+    "react": "eslint fixture/react/* --ext .ts,.js,.tsx,.jsx --config fixture/react/.eslintrc.js",
+    "vue": "eslint fixture/vue/* --ext .ts,.js,.vue --config fixture/vue/.eslintrc.js",
+    "ts": "eslint fixture/typescript/* --ext .ts,.js --config fixture/typescript/.eslintrc.js"
   },
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org/"
   },
   "peerDependencies": {
-    "eslint": ">=8.12.0",
+    "eslint": ">=8.14.0",
     "typescript": "^4.6.3"
   },
   "dependencies": {
-    "@babel/core": "^7.17.8",
-    "@babel/eslint-parser": "^7.17.0",
     "@typescript-eslint/eslint-plugin": "^5.17.0",
     "@typescript-eslint/parser": "^5.17.0",
-    "eslint-config-alloy": "^4.5.1",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-vue": "^8.5.0",
-    "prettier": "^2.6.2",
     "vue-eslint-parser": "^8.3.0"
   },
   "devDependencies": {
     "@types/node": "^17.0.23",
-    "eslint": "^8.12.0",
+    "eslint": "^8.14.0",
     "react": "^18.0.0",
     "typescript": "^4.6.3",
     "vue": "^3.2.31"

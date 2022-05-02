@@ -1,3 +1,8 @@
 module.exports = {
-  extends: ["alloy", "alloy/typescript", "plugin:prettier/recommended"],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
+  extends: [ './basic', 'plugin:@typescript-eslint/recommended' ],
 };
