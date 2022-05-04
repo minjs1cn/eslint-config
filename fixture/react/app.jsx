@@ -1,10 +1,20 @@
 import React from 'react';
+import { useEffect } from 'react/cjs/react.production.min';
 
 export default function App() {
+  const [ count, setCount ] = React.useState(0);
+
+  useEffect(() => {
+    setInterval(() => {
+      setCount(count + 1);
+    });
+  }, [ count ]);
+
   return (
-    <div className="111">
+    <div className="a">
       <h1>Hello World</h1>
-      <p>This is a React app</p>
+      <p>{ count }</p>
+      <img src="" alt="" />
     </div>
   );
 }
