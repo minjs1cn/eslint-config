@@ -4,7 +4,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/minjs1n/eslint-config-jammy"
+    "url": "https://github.com/minjs1n/eslint-config"
   },
   "main": "index.js",
   "files": [
