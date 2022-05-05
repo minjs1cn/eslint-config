@@ -1,0 +1,48 @@
+{
+  "name": "eslint-config-jammy",
+  "version": "0.0.5",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minjs1n/eslint-config"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "basic.js",
+    "react.js",
+    "vue.js",
+    "typescript.js"
+  ],
+  "scripts": {
+    "lint": "npm run basic && npm run react && npm run typescript && npm run vue",
+    "basic": "eslint fixture/basic/* --config fixture/basic/.eslintrc.js",
+    "react": "eslint fixture/react/* --ext .ts,.js,.tsx,.jsx --config fixture/react/.eslintrc.js",
+    "vue": "eslint fixture/vue/* --ext .ts,.js,.vue --config fixture/vue/.eslintrc.js",
+    "ts": "eslint fixture/typescript/* --ext .ts,.js --config fixture/typescript/.eslintrc.js"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.14.0",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.17.0",
+    "@typescript-eslint/parser": "^5.17.0",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "eslint-plugin-vue": "^8.5.0",
+    "vue-eslint-parser": "^8.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.23",
+    "eslint": "^8.14.0",
+    "react": "^18.0.0",
+    "typescript": "^4.6.3",
+    "vue": "^3.2.31"
+  }
+}
