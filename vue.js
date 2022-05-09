@@ -1,8 +1,13 @@
 module.exports = {
-  extends: [
-    './typescript',
-    'plugin:vue/vue3-recommended',
-  ],
+  parser: '@typescript-eslint/parser',
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  extends: [ './basic', 'plugin:@typescript-eslint/recommended', 'plugin:vue/vue3-recommended' ],
   overrides: [
     {
       files: [ '*.vue' ],

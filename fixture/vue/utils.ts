@@ -2,6 +2,10 @@ export function add(a, b) {
   return a + b;
 }
 
+interface IUser {
+  name: string;
+}
+
 export function delay(ms) {
   return new Promise(resolve => {
     setTimeout(resolve, ms);
