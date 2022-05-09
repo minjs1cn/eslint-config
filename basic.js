@@ -517,7 +517,7 @@ module.exports = {
     // 要求使用 let 或 const 而不是 var
     'no-var': [ 'error' ],
     // 要求或禁止对象字面量中方法和属性使用简写语法
-    'object-shorthand': [ 'error', 'consistent-as-needed' ],
+    'object-shorthand': [ 'error', 'always' ],
     // 要求回调函数使用箭头函数
     'prefer-arrow-callback': [ 'error' ],
     // 要求使用 const 声明那些声明后不再被修改的变量
