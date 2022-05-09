@@ -276,7 +276,7 @@ module.exports = {
     // 禁止将变量初始化为 undefined
     'no-undef-init': [ 'error' ],
     // 禁止将 undefined 作为标识符
-    'no-undefined': [ 'error' ],
+    'no-undefined': [ 'off' ],
     // 禁止在变量定义之前使用它们
     'no-use-before-define': [ 'error' ],
 
