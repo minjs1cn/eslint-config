@@ -10,4 +10,8 @@ module.exports = {
       version: 'detect',
     },
   },
+  rules: {
+    indent: 'off',
+    '@typescript-eslint/indent': [ 'error', 2 ],
+  },
 };

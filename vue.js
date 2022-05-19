@@ -20,4 +20,8 @@ module.exports = {
   env: {
     'vue/setup-compiler-macros': true,
   },
+  rules: {
+    indent: 'off',
+    '@typescript-eslint/indent': [ 'error', 2 ],
+  },
 };
